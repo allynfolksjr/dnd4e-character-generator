@@ -267,7 +267,7 @@ class Character
     Say.bold "#{@character_unique_traits[:first_name]} #{@character_unique_traits[:last_name]}, a mighty #{@character_unique_traits[:sex]} #{@race} #{@p_class}."
     @core_stats.each do |trait, score|
       next if trait == :racial_traits_applied
-      puts("#{trait.upcase}: #{score}" +  (score >= 17  ? " (!)" : " ")).blue
+      puts ("#{trait.upcase}: #{score}" +  (score >= 17  ? " (!)" : " ")).blue
     end
     Say.text "Weapon: #{@weapon}"
   end
