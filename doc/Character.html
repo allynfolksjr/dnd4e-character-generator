@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Character</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./libGen_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="libGen.rb">libGen.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="Object.html">Object</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-construct_character">::construct_character</a></li>
+          
+          <li><a href="#method-c-greet">::greet</a></li>
+          
+          <li><a href="#method-c-list_characters">::list_characters</a></li>
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-c-select_class">::select_class</a></li>
+          
+          <li><a href="#method-c-select_race">::select_race</a></li>
+          
+          <li><a href="#method-i-display">#display</a></li>
+          
+          <li><a href="#method-i-generate_name">#generate_name</a></li>
+          
+          <li><a href="#method-i-generate_sex">#generate_sex</a></li>
+          
+          <li><a href="#method-i-generate_stats">#generate_stats</a></li>
+          
+          <li><a href="#method-i-load_initial_race_variables">#load_initial_race_variables</a></li>
+          
+          <li><a href="#method-i-load_race_modifiers">#load_race_modifiers</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><a class="include" href="Say.html">Say</a></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Character.html">Character</a></li>
+        
+          <li><a href="./Dice.html">Dice</a></li>
+        
+          <li><a href="./Dragonborn.html">Dragonborn</a></li>
+        
+          <li><a href="./Dragonborn_Fighter.html">Dragonborn_Fighter</a></li>
+        
+          <li><a href="./Dragonborn_Wizard.html">Dragonborn_Wizard</a></li>
+        
+          <li><a href="./Dwarf.html">Dwarf</a></li>
+        
+          <li><a href="./Dwarf_Fighter.html">Dwarf_Fighter</a></li>
+        
+          <li><a href="./Dwarf_Wizard.html">Dwarf_Wizard</a></li>
+        
+          <li><a href="./Eladrin.html">Eladrin</a></li>
+        
+          <li><a href="./Eladrin_Fighter.html">Eladrin_Fighter</a></li>
+        
+          <li><a href="./Eladrin_Wizard.html">Eladrin_Wizard</a></li>
+        
+          <li><a href="./Elf.html">Elf</a></li>
+        
+          <li><a href="./Elf_Fighter.html">Elf_Fighter</a></li>
+        
+          <li><a href="./Elf_Wizard.html">Elf_Wizard</a></li>
+        
+          <li><a href="./Fighter.html">Fighter</a></li>
+        
+          <li><a href="./HalfElf.html">HalfElf</a></li>
+        
+          <li><a href="./HalfElf_Fighter.html">HalfElf_Fighter</a></li>
+        
+          <li><a href="./HalfElf_Wizard.html">HalfElf_Wizard</a></li>
+        
+          <li><a href="./Halfling.html">Halfling</a></li>
+        
+          <li><a href="./Halfling_Fighter.html">Halfling_Fighter</a></li>
+        
+          <li><a href="./Halfling_Wizard.html">Halfling_Wizard</a></li>
+        
+          <li><a href="./Human.html">Human</a></li>
+        
+          <li><a href="./Human_Fighter.html">Human_Fighter</a></li>
+        
+          <li><a href="./Human_Wizard.html">Human_Wizard</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./Say.html">Say</a></li>
+        
+          <li><a href="./Tiefling.html">Tiefling</a></li>
+        
+          <li><a href="./Tiefling_Fighter.html">Tiefling_Fighter</a></li>
+        
+          <li><a href="./Tiefling_Wizard.html">Tiefling_Wizard</a></li>
+        
+          <li><a href="./Wizard.html">Wizard</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Character</h1>
+
+    <div id="description" class="description">
+      
+<p>Stock character class</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="calculated_stats-attribute-method" class="method-detail">
+          <a name="calculated_stats"></a>
+          
+          <a name="calculated_stats="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">calculated_stats</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="character_unique_traits-attribute-method" class="method-detail">
+          <a name="character_unique_traits"></a>
+          
+          <a name="character_unique_traits="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">character_unique_traits</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="core_stats-attribute-method" class="method-detail">
+          <a name="core_stats"></a>
+          
+          <a name="core_stats="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">core_stats</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="p_class-attribute-method" class="method-detail">
+          <a name="p_class"></a>
+          
+          <a name="p_class="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">p_class</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="race-attribute-method" class="method-detail">
+          <a name="race"></a>
+          
+          <a name="race="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">race</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="weapon-attribute-method" class="method-detail">
+          <a name="weapon"></a>
+          
+          <a name="weapon="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">weapon</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="construct_character-method" class="method-detail ">
+          <a name="method-c-construct_character"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">construct_character</span><span
+              class="method-args">(race,p_class)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="construct_character-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 261</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">construct_character</span>(<span class="ruby-identifier">race</span>,<span class="ruby-identifier">p_class</span>)
+  <span class="ruby-comment">#puts $characters.class</span>
+  <span class="ruby-identifier">$characters</span> <span class="ruby-operator">&lt;&lt;</span> (<span class="ruby-identifier">eval</span> (<span class="ruby-node">&quot;#{race}_#{p_class}.new&quot;</span>))
+  <span class="ruby-comment">#return $characters.last</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- construct_character-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- construct_character-method -->
+
+      
+        <div id="greet-method" class="method-detail ">
+          <a name="method-c-greet"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">greet</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="greet-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 235</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">greet</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">bold</span> <span class="ruby-string">&quot;DnD 4e Character Generator&quot;</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">text</span> <span class="ruby-string">&quot;* Limited class and race support exists.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- greet-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- greet-method -->
+
+      
+        <div id="list_characters-method" class="method-detail ">
+          <a name="method-c-list_characters"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">list_characters</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>List characters. Class method.</p>
+            
+
+            
+            <div class="method-source-code" id="list_characters-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 228</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">list_characters</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">negative</span> <span class="ruby-string">&quot;There are no characters defined!&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">$characters</span>.<span class="ruby-identifier">nil?</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">bold</span> <span class="ruby-string">&quot;Current characters:&quot;</span>
+  <span class="ruby-identifier">$characters</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">c</span>,<span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{i}: #{c.display}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- list_characters-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- list_characters-method -->
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 159</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
+  <span class="ruby-ivar">@core_stats</span> = {
+    <span class="ruby-identifier">str</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>,
+    <span class="ruby-identifier">con</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>,
+    <span class="ruby-identifier">dex</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>,
+    <span class="ruby-identifier">int</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>,
+    <span class="ruby-identifier">wis</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>,
+    <span class="ruby-identifier">cha</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+  }
+  <span class="ruby-ivar">@calculated_stats</span> = {
+    <span class="ruby-identifier">hp</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>,
+    <span class="ruby-identifier">bloodied_value</span><span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+  }
+
+  <span class="ruby-ivar">@character_unique_traits</span> = {
+    <span class="ruby-identifier">first_name</span><span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>,
+    <span class="ruby-identifier">last_name</span><span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>,
+    <span class="ruby-identifier">honorific</span><span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>,
+    <span class="ruby-identifier">sex</span><span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+  }
+  <span class="ruby-comment">#generate_stats</span>
+  <span class="ruby-identifier">load_initial_class_variables</span>
+  <span class="ruby-identifier">load_initial_race_variables</span>
+  <span class="ruby-identifier">generate_stats</span>
+  <span class="ruby-identifier">generate_sex</span>
+  <span class="ruby-identifier">generate_name</span>
+  <span class="ruby-identifier">load_class_modifiers</span>
+  <span class="ruby-identifier">load_race_modifiers</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+        <div id="select_class-method" class="method-detail ">
+          <a name="method-c-select_class"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">select_class</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="select_class-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 250</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">select_class</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">bold</span> <span class="ruby-string">&quot;Select your Class&quot;</span>
+  <span class="ruby-identifier">result</span> = <span class="ruby-constant">Say</span>.<span class="ruby-identifier">get_with_array</span>(<span class="ruby-constant">AVAILABLE_CLASSES</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">AVAILABLE_CLASSES</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">result</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">Say</span>.<span class="ruby-identifier">negative</span> <span class="ruby-node">&quot;Your choice #{result} is not an available class. Please select again.&quot;</span>
+    <span class="ruby-identifier">select_class</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- select_class-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- select_class-method -->
+
+      
+        <div id="select_race-method" class="method-detail ">
+          <a name="method-c-select_race"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">select_race</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="select_race-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 239</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">select_race</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">bold</span> <span class="ruby-string">&quot;Select your Race&quot;</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">text</span> <span class="ruby-string">&quot;Available choices are:&quot;</span>
+  <span class="ruby-identifier">result</span> = <span class="ruby-constant">Say</span>.<span class="ruby-identifier">get_with_array</span>(<span class="ruby-constant">AVAILABLE_RACES</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">AVAILABLE_RACES</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">result</span>)
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">Say</span>.<span class="ruby-identifier">negative</span> <span class="ruby-node">&quot;Your choice #{result} is not an available race. Please select again.&quot;</span>
+    <span class="ruby-identifier">select_race</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- select_race-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- select_race-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="display-method" class="method-detail ">
+          <a name="method-i-display"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">display</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Display name, class, race, and the core stats of a character.</p>
+            
+
+            
+            <div class="method-source-code" id="display-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 190</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">display</span>
+  <span class="ruby-constant">Say</span>.<span class="ruby-identifier">bold</span> <span class="ruby-identifier">string</span> = <span class="ruby-node">&quot;You are #{@character_unique_traits[:first_name]} #{@character_unique_traits[:last_name]}, a mighty #{@character_unique_traits[:sex]} #{@race} #{@p_class}.&quot;</span>
+  <span class="ruby-ivar">@core_stats</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">trait</span>, <span class="ruby-identifier">score</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">trait</span> <span class="ruby-operator">==</span> <span class="ruby-value">:racial_traits_applied</span>
+    <span class="ruby-identifier">puts</span> (<span class="ruby-node">&quot;#{trait.upcase}: #{score}&quot;</span> <span class="ruby-operator">+</span>  (<span class="ruby-identifier">score</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">17</span>  <span class="ruby-operator">?</span> <span class="ruby-string">&quot; (!)&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot; &quot;</span>)).<span class="ruby-identifier">blue</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- display-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- display-method -->
+
+      
+        <div id="generate_name-method" class="method-detail ">
+          <a name="method-i-generate_name"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">generate_name</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Load some default names if none other are specified.</p>
+
+<p>To-do: Honorific support based on level.</p>
+            
+
+            
+            <div class="method-source-code" id="generate_name-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 219</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_name</span>
+  <span class="ruby-ivar">@male_first_names</span> <span class="ruby-operator">||=</span> <span class="ruby-node">%(Chuck Nixon Lester)</span>
+  <span class="ruby-ivar">@female_first_names</span> <span class="ruby-operator">||=</span> <span class="ruby-node">%(Laura Beth Lindy)</span>
+  <span class="ruby-ivar">@last_names</span> <span class="ruby-operator">||=</span> <span class="ruby-node">%(Nixon Clinton Putin Roosevelt)</span>
+  <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:first_name</span>] = <span class="ruby-ivar">@male_first_names</span>.<span class="ruby-identifier">sample</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:sex</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;male&quot;</span>
+  <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:first_name</span>] = <span class="ruby-ivar">@female_first_names</span>.<span class="ruby-identifier">sample</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:sex</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;female&quot;</span>
+  <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:last_name</span>] = <span class="ruby-ivar">@last_names</span>.<span class="ruby-identifier">sample</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- generate_name-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- generate_name-method -->
+
+      
+        <div id="generate_sex-method" class="method-detail ">
+          <a name="method-i-generate_sex"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">generate_sex</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Generate sexy times. I mean. <a href="Character.html">Character</a> sex.</p>
+            
+
+            
+            <div class="method-source-code" id="generate_sex-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 213</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_sex</span>
+  <span class="ruby-identifier">rand</span>(<span class="ruby-value">2</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:sex</span>] = <span class="ruby-string">&quot;male&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@character_unique_traits</span>[<span class="ruby-value">:sex</span>] = <span class="ruby-string">&quot;female&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- generate_sex-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- generate_sex-method -->
+
+      
+        <div id="generate_stats-method" class="method-detail ">
+          <a name="method-i-generate_stats"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">generate_stats</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Generate the core six stats using the normal approach.</p>
+            
+
+            
+            <div class="method-source-code" id="generate_stats-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 208</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_stats</span>
+  <span class="ruby-ivar">@core_stats</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-ivar">@core_stats</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-constant">Dice</span>.<span class="ruby-identifier">roll</span>(<span class="ruby-value">6</span>,<span class="ruby-value">4</span>,<span class="ruby-value">1</span>) }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- generate_stats-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- generate_stats-method -->
+
+      
+        <div id="load_initial_race_variables-method" class="method-detail ">
+          <a name="method-i-load_initial_race_variables"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">load_initial_race_variables</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Shim methods. These are ran prior to stat generation. For race-specific
+names and such.</p>
+            
+
+            
+            <div class="method-source-code" id="load_initial_race_variables-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 200</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">load_initial_race_variables</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- load_initial_race_variables-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- load_initial_race_variables-method -->
+
+      
+        <div id="load_race_modifiers-method" class="method-detail ">
+          <a name="method-i-load_race_modifiers"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">load_race_modifiers</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Shim methods. These are ran <b>after</b> stat generation. For +2 char
+modifers etc.</p>
+            
+
+            
+            <div class="method-source-code" id="load_race_modifiers-source">
+<pre>
+<span class="ruby-comment"># File libGen.rb, line 204</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">load_race_modifiers</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- load_race_modifiers-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- load_race_modifiers-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
